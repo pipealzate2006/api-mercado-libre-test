@@ -1,6 +1,6 @@
 import cors from "cors";
 
-export const ACCEPTED_ORIGINS = ["http://localhost:7020"];
+export const ACCEPTED_ORIGINS = ["http://localhost:7020", "https://api-mercado-libre-test.onrender.com/"];
 
 export const corsMiddleWares = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) =>
   cors({
