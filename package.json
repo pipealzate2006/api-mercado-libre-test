@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./src/app.js",
+    "start": "node ./src/index.js",
     "dev": "node --watch ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cors": "2.8.5",
     "express": "4.19.2"
   }
 }
