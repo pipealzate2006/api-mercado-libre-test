@@ -26,5 +26,13 @@ export const getProducts = (req, res) => {
 };
 
 export const getProduct = (req, res) => {
-  res.send("Hello dd");
+  try {
+    const { id } = req.params;
+    const productID = parseInt(id);
+    const product = products.find((product) => product.id === productID);
+    if (product) return res.json(product);
+    res.status(404).json({ error: "Product not found" });
+  } catch (error) {
+    res.status(500).json({ error: "Internal Server Error" });
+  }
 };

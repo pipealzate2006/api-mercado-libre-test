@@ -6,6 +6,6 @@ import {
 
 export const productsRouter = Router();
 
-productsRouter.get("/items", getProducts);
+productsRouter.get("/api/items", getProducts);
 
-productsRouter.get("/", getProduct);
+productsRouter.get("/api/items/:id", getProduct);
