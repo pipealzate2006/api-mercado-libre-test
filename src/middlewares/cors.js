@@ -1,6 +1,6 @@
 import cors from "cors";
 
-export const ACCEPTED_ORIGINS = ["http://localhost:5173"];
+export const ACCEPTED_ORIGINS = ["http://localhost:5173", "https://moonlit-fenglisu-e713ef.netlify.app"];
 
 export const corsMiddleWares = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) =>
   cors({
